@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="mb-4">Edit User</h1>
-        <form action="/update-user/<?= $userdata['id'] ?>" method="post" class="needs-validation" novalidate>
+        <h1 class="mb-4">Add User</h1>
+        <form action="/store-user" method="post" class="needs-validation" novalidate>
            <div class="jutify-content-center">
            <div class="mb-3">
                 <label for="name" class="form-label">Name:</label>
-                <input type="text" class="form-control" id="name" value="<?php echo($userdata['name']) ?>" name="name" required>
+                <input type="text" class="form-control" id="name" name="name" required>
                 <div class="invalid-feedback">
                     Please provide a name.
                 </div>
@@ -22,13 +22,19 @@
 
             <div class="mb-3">
                 <label for="name" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="name" value="<?php echo($userdata['email']) ?>" name="email" required>
+                <input type="email" class="form-control" id="name" name="email" required>
                 <div class="invalid-feedback">
                     Please provide a email.
                 </div>
             </div>
 
-        
+            <div class="mb-3">
+                <label for="name" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="name" name="password" required>
+                <div class="invalid-feedback">
+                    Please provide a password.
+                </div>
+            </div>
 
     
             
@@ -49,5 +55,3 @@
     
 </body>
 </html>
-
-
